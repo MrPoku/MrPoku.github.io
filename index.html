@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" id="html">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div class="nav">
+        <p>Change Playfield Size: <input id="change-size"></input></p>
+        <img id="open-menu" src="./images/menu.jpeg" alt="open menu">
+
+        <p id="bomb-counter">Flags: <span id="bombs-left">0</span></p>
+    </div>
+
+    <div class="container">
+        <div class="grid" id="grid">
+ 
+        </div>
+    </div>
+
+    <div id="popup" class="popup">
+        <h1>You Lose</h1>
+        <h2>CASUAL</h2>
+        <h3>CTL + R to restart</h3>
+    </div>
+
+    <div id="win-popup" class="popup">
+        <h1>You Win</h1>
+        <h2></h2>
+        <h3>CTL + R to restart</h3>
+    </div>
+
+    <div class="directions" id="directions">
+        <h2><img id="exit" src="./images/1024px-Cross_icon_(white).svg.png" alt="exit directions"> Directions</h2>
+        <div class="imgblank">
+            <img src="./images/normal.png" alt="Reload">
+            <p class="blank-text">
+                When clicking on boxes, numbers inside those boxes will appear. These numbers
+                indicate how many bombs are near that square(1-8).
+            </p>
+        </div>
+        <div class="imgflag">
+            <img src="./images/withflag.png" alt="Reload">
+            <p class="flag-text">
+                However, you don't want to click those bombs so you need to right click(two finger
+                click for laptop gang) to place a flag which will prevent you from tapping 
+                the bomb square and loosing. When you get towards the end of the game, all
+                squares that you think are bombs will need to be flagged in order to win.
+            </p>
+        </div>
+        <div class="imgbomb">
+            <img src="./images/withbomb.png" alt="Reload">
+            <p class="bomb-text">
+                On the common chance that you do click the square with a bomb, all squares
+                with bombs will be lit up and you will subsequently recieve a loser notice (take the L).
+            </p>
+        </div>
+    </div>
+</body>
+</html>
