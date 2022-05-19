@@ -1,11 +1,3 @@
-////////////////////////////////////////////////////
-// Mine Sweeper 
-// August Bernberg
-// 4/5/22
-// ...
-
-////////////////////////////////////////////////////
-// Global Variables
 const grid = document.querySelector(".grid")
 let width = 10;
 let bombCount = 20;
@@ -26,9 +18,6 @@ let maxOpening = Math.floor((width*width)/10); //for first click
 const menu = document.getElementById('open-menu');
 const exit = document.getElementById('exit')
 let directions = document.getElementById('directions');
-
-////////////////////////////////////////////////////
-// Functions
  
 let createBoard = function(){
     // creates x amount of squares with onclick events that when clicked will reveal a bomb or #
